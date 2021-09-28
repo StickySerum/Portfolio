@@ -542,6 +542,10 @@ header {
 	.form-control {
 		max-width: 500px;
 		margin: 20px auto;
+
+		@media(max-width: 768px) {
+			font-size: 13px;
+		}
 	}
 
 	button.form-control {
@@ -551,6 +555,10 @@ header {
 		background-color: $yellow;
 		margin-bottom: 0;
 		transition: .3s ease;
+
+		@media(max-width: 768px) {
+			max-width: 100px;
+		}
 
 		&:hover {
 			background-color: $black;

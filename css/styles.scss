@@ -9,6 +9,7 @@ $yellow: #fee212;
 
 html {
 	height: 100%;
+	overflow-x: hidden;
 }
 
 html * {
@@ -19,6 +20,10 @@ body {
     background-color: $black;
     font-family: 'Montserrat';
     font-size: 15px;
+
+    @media(max-width: 768px) {
+		font-size: 13px;
+	}
 }
 
 .container {
@@ -41,6 +46,14 @@ h1 {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	color: $yellow;
+
+	@media(max-width: 992px) {
+		font-size: 50px;
+	}
+
+	@media(max-width: 768px) {
+		font-size: 40px;
+	}
 }
 
 header {
@@ -57,15 +70,28 @@ header {
 			line-height: 0;
 			margin-top: 4px;
 			width: 30%;
+
+			@media(max-width: 768px) {
+				display: none;
+			}
 		}
 
 		nav {
 			width: 70%;
 			text-align: right;
-		}
+
+			@media(max-width: 768px) {
+				width: 100%;
+				text-align: center;
+			}
+ 		}
 
 		ul {
 			list-style: none;
+
+			@media(max-width: 768px) {
+				padding: 0;
+			}
 		}
 
 		li {
@@ -107,12 +133,17 @@ header {
 	}
 }
 
-.hero {
+.hero, .mobile-hero {
 	height: 580px;
 	width: 100%;
 	background-image: linear-gradient(rgba(30,30,30,.9), rgba(30,30,30,.9)), url('../assets/images/hero-background.jpg');
 	background-size: cover;
 	position: relative;
+
+	@media(max-width: 768px) {
+		height: auto;
+		padding-top: 10px;
+	}
 
 	.hero-content {
 		background-image: url('../assets/images/yellow-bar.png');
@@ -120,6 +151,10 @@ header {
 		background-position: 50% 45%;
 		background-repeat: no-repeat;
 		height: 100%;
+
+		@media(max-width: 768px) {
+			background: none;
+		}
 
 		.container {
 			display: flex;
@@ -140,6 +175,10 @@ header {
 			margin-left: 40%;
 		}
 
+		@media(max-width: 768px) {
+			display: none;
+		}
+
 		h1 {
 			color: #1e1e1e;
 			font-size: 80px;
@@ -155,6 +194,10 @@ header {
 						 2px 2px 15px #f9f0af, -2px -2px 15px #f9f0af,
 						 2px 2px 15px #f9f0af, -2px -2px 15px #f9f0af,
 						 2px 2px 15px #f9f0af, -2px -2px 15px #f9f0af;
+
+			@media(max-width: 768px) {
+				font-size: 60px;
+			}
 		}
 
 		h2 {
@@ -162,6 +205,10 @@ header {
 			font-weight: 400;
 			font-size: 18px;
 			text-transform: uppercase;
+
+			@media(max-width: 768px) {
+				font-size: 14px;
+			}
 		}
 	}
 }
@@ -174,13 +221,45 @@ header {
 	left: 35%;
 	transform: translateX(-35%);
 
-	@media (max-width: 992px) {
+	@media(max-width: 992px) {
 		transform: translateX(-70%);
+	}
+
+	@media(max-width: 768px) {
+		position: relative;
+		height: 350px;
+		bottom: 0;
+		left: 0;
+		transform: none;
+	}
+}
+
+.mobile-hero {
+	@media(min-width: 769px) {
+		display: none;
+	}
+
+	background: #f5d801;
+	padding: 40px 0;
+
+	.hero-text {
+		display: block;
+		margin: 0;
 	}
 }
 
 .about-me-row {
+	height: 550px;
 	padding: 0 20px;
+
+	@media(max-width: 768px) {
+		height: auto;
+		padding: 40px 0;
+	}
+
+	@media (max-width: 499px) {
+		padding: 40px 20px;
+	}
 }
 
 .about-me {
@@ -194,6 +273,17 @@ header {
 	position: relative;
 	z-index: 2;
 
+	@media(max-width: 768px) {
+		margin-top: 0;
+		height: auto;
+		flex-direction: column;
+		max-width: 65%;
+	}
+
+	@media(max-width: 499px) {
+		max-width: 100%;
+	}
+
 
 	.left-side {
 		display: flex;
@@ -202,10 +292,21 @@ header {
 		width: 50%;
 		height: 100%;
 
+		@media(max-width: 768px) {
+			display: block;
+			width: 100%;
+		}
+
 		h1 {
 			margin-left: 100px;
 			width: 100%;
 			line-height: 1;
+
+			@media(max-width: 768px) {
+				margin: 0;
+				padding: 40px 0;
+				text-align: center;
+			}
 		}
 
 		h1:after {
@@ -215,6 +316,10 @@ header {
 			background-color: #ffffff;
 			display: block;
 			margin-left: 100px;
+
+			@media(max-width: 768px) {
+				display: none;
+			}
 		}
 	}
 
@@ -227,6 +332,13 @@ header {
 		align-items: center;
 		justify-content: center;
 
+		@media(max-width: 768px) {
+			width: 100%;
+			display: block;
+			padding: 40px 0;
+			border-radius: 0 0 30px 30px;
+		}
+
 		p {
 			max-width: 350px;
 			margin: 0 40px;
@@ -235,26 +347,146 @@ header {
 }
 
 .torn-picture-row {
-	height: 600px;
-	position: relative;
-	background-image: url('../assets/images/bw-award.png');
-	background-repeat: no-repeat;
-	background-size: 125%;
-	background-position: 100% 75%;
 
-	img {
+	.torn-picture {
 		width: 100%;
-		position: absolute;
-		left: 0;
+	}
+}
+
+.portfolio-title-row {
+	padding-bottom: 20px;
+
+	h1 {
+		text-align: center;
+	}
+}
+
+.portfolio-row {
+	height: 500px;
+	background-color: #ffffff;
+	display: flex;
+
+	@media(max-width: 768px) {
+		flex-direction: column;
+		height: auto;
+		padding: 40px 20px;
 	}
 
-	.torn-edge-top {
-		top: 0;
+	.left-side {
+		width: 100%;
+		max-width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		@media(max-width: 768px) {
+			max-width: 100%;
+		}
+
+		h2 {
+			text-transform: uppercase;
+			text-align: left;
+			font-size: 22px;
+
+			@media(max-width: 768px) {
+				font-size: 14px;
+			}
+		}
+
+		.logos-container {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			max-width: 500px;
+		}
+
+		.logo {
+			height: 50px;
+			margin: 15px;
+			display: flex;
+			padding: 3px;
+			transform: scale(.9);
+			transition: .2s ease-in-out;
+
+			@media(max-width: 768px) {
+				max-width: 110px;
+				height: 40px;
+			}		
+		}
+
+		.logo:hover {
+			transform: scale(1);
+		}
 	}
 
-	.torn-edge-bottom {
-		transform: rotate(180deg) ;
-		bottom: 0;
+	.right-side {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		max-width: 50%;
+		width: 100%;
+
+		@media(max-width: 768px) {
+			max-width: 100%;
+			padding-top: 20px;
+		}		
+
+		.macbook-container {
+			position: relative;
+			max-width: 90%;
+
+			@media(max-width: 768px) {
+				max-width: 100%;
+			}
+		}
+
+		.macbook-background {
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			opacity: 0;
+			transition: .5s ease;
+
+			&.allin {
+				background-image: url('../assets/images/allin.png');
+				width: 80%;
+				opacity: 1;
+			}
+			&.beaverbrook {
+				background-image: url('../assets/images/beaverbrookah.png');
+				width: 95%;
+				opacity: 1;
+			}
+			&.encore {
+				background-image: url('../assets/images/encorevet.png');
+				width: 95%;
+				opacity: 1;
+			}
+			&.mendocino {
+				background-image: url('../assets/images/mendocinoah.png');
+				opacity: 1;
+			}
+			&.skinlab {
+				background-image: url('../assets/images/skinlab.png');
+				width: 85%;
+				opacity: 1;
+			}
+		}
+
+		.macbook{
+			position: relative;
+			z-index: 2;
+			overflow: hidden;
+			width: 100%;
+		}
+
 	}
 }
 

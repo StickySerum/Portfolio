@@ -8,21 +8,46 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.logos-container .logo').click(function () {
+                $('.macbook-container .macbook-background').removeClass('allin beaverbrook encore mendocino skinlab');
 
+                switch(this.id) {
+                    case 'allin-logo':
+                        $('.macbook-container .macbook-background').addClass('allin');
+                        break;
+                    case 'beaverbrook-logo':
+                        $('.macbook-container .macbook-background').addClass('beaverbrook');
+                        break;
+                    case 'encore-logo':
+                        $('.macbook-container .macbook-background').addClass('encore');
+                        break;
+                    case 'mendocino-logo':
+                        $('.macbook-container .macbook-background').addClass('mendocino');
+                        break;
+                    case 'skinlab-logo':
+                        $('.macbook-container .macbook-background').addClass('skinlab');
+                        break;
+                }
+            });
+        });
+    </script>
     <title>Tyler Durfey - About</title>
   </head>
 
-  <body>
+  <body class="about">
 
     <div class="wrapper">
     	<header>
     		<div class="container">
-    			<h1><a href="#">Tyler Durfey</a></h1>
+    			<h1><a href="index.html">Tyler Durfey</a></h1>
     			<nav>
     				<ul>
     					<li><a href="index.html">About</a></li>
     					<li><a href="portfolio.html">Portfolio</a></li>
-    					<li><a href="#">Contact</a></li>
+    					<li><a href="contact.html">Contact</a></li>
     				</ul>
     			</nav>
     		</div>	
@@ -34,9 +59,16 @@
 						<h1>Tyler Durfey</h1>
 						<h2>Dad. Developer. Designer.</h2>
 					</div>
+					<img class="sticker" src="assets/images/bw-sticker.png" />
 				</div>
-				<img class="sticker" src="assets/images/bw-sticker.png" />
     		</div>
+		</div>
+
+		<div class="mobile-hero">
+			<div class="hero-text">
+						<h1>Tyler Durfey</h1>
+						<h2>Dad. Developer. Designer.</h2>
+					</div>
 		</div>
 
 		<div class="about-me-row">
@@ -49,12 +81,39 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="torn-picture-row">
+			<img class="torn-picture" src="assets/images/bw-award-torn.png"/>
+		</div>
+
+    <div class="portfolio-title-row">
+    	<h1>Award Winning Portfolio</h1>
+    </div>
+    <div class="portfolio-row">
+    	<div class="left-side">
+      	<h2>Preview a few:</h2>
+      	<div class="logos-container">
+      		<img class="logo" id="allin-logo" src="assets/images/all-in-logo.svg"/>
+          <img class="logo" id="beaverbrook-logo" src="assets/images/beaverbrook-logo.png"/>
+          <img class="logo" id="encore-logo" src="assets/images/encore-logo.png"/>
+          <img class="logo" id="mendocino-logo" src="assets/images/mendocino-logo.jpeg"/>
+          <img class="logo" id="skinlab-logo" src="assets/images/skinlab-logo.svg"/>
+        </div>
+      </div>
+
+      <div class="right-side">
+      	<div class="macbook-container">
+        <div class="macbook-background encore"></div>
+        	<img class="macbook" src="assets/images/macbook.png"/>
+        </div>
+      </div>
+    </div>
+
 		<footer></footer>
 	</div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
   </body>
 </html>

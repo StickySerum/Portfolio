@@ -343,6 +343,30 @@ header {
 		p {
 			max-width: 350px;
 			margin: 0 40px;
+
+			@media(max-width: 768px) {
+				padding: 0 20px;
+				margin: auto;
+			}
+		}
+
+		.buzz-word {
+			color: #90273b;
+			font-weight: 500;
+			white-space: nowrap;
+
+			@media(max-width: 499px) {
+				white-space: normal;
+			}
+
+			.gold {
+				color: #CEB888;
+				text-shadow: 0 0 1px #d3d3d3;
+			}
+
+			.black {
+				color: #000000;
+			}
 		}
 	}
 }
@@ -487,10 +511,54 @@ header {
 			overflow: hidden;
 			width: 100%;
 		}
-
 	}
 }
 
+.contact-row {
+	height: 600px;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-image:  linear-gradient(rgba(30,30,30,.9), rgba(30,30,30,.9)), url('../assets/images/stranger.png');
+	background-size: 70%;
+	background-position: bottom left;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
+	@media(max-width: 992px) {
+		height: 500px;
+	}
+
+	@media(max-width: 768px) {
+		height: 450px;
+	}
+
+	form {
+		width: 100%;
+	}
+
+	.form-control {
+		max-width: 500px;
+		margin: 20px auto;
+	}
+
+	button.form-control {
+		max-width: 200px;
+		border: 2px solid $black;
+		color: $black;
+		background-color: $yellow;
+		margin-bottom: 0;
+		transition: .3s ease;
+
+		&:hover {
+			background-color: $black;
+			color: $yellow;
+			border-color: $yellow;
+		}
+	}
+}
 
 
 

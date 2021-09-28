@@ -45,9 +45,9 @@
     			<h1><a href="index.html">Tyler Durfey</a></h1>
     			<nav>
     				<ul>
-    					<li><a href="index.html">About</a></li>
-    					<li><a href="portfolio.html">Portfolio</a></li>
-    					<li><a href="contact.html">Contact</a></li>
+    					<li><a href="#about">About</a></li>
+    					<li><a href="#portfolio">Portfolio</a></li>
+    					<li><a href="#contact">Contact</a></li>
     				</ul>
     			</nav>
     		</div>	
@@ -72,12 +72,12 @@
 		</div>
 
 		<div class="about-me-row">
-			<div class="about-me container">
+			<div class="about-me container" id="about">
 				<div class="left-side">
 					<h1>About Me</h1>
 				</div>
 				<div class="right-side">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+					<p> Hey! My name is Tyler Durfey and I am a <span class="buzz-word">Full Stack Developer</span>. I have my Bachelor's degree in Computer Science from <span class="buzz-word"><span class="gold">Purdue</span> <span class="black">University</span></span> and I am currently employed with NiSource as a <span class="buzz-word">Java Developer</span>. I am accepting Freelance work on the side! Some of my skills are: <span class="buzz-word">HTML/CSS/JavaScript/WordPress</span>, <span class="buzz-word">Java</span>, and <span class="buzz-word">SQL</span>.</p>
 				</div>
 			</div>
 		</div>
@@ -89,7 +89,7 @@
     <div class="portfolio-title-row">
     	<h1>Award Winning Portfolio</h1>
     </div>
-    <div class="portfolio-row">
+    <div class="portfolio-row" id="portfolio">
     	<div class="left-side">
       	<h2>Preview a few:</h2>
       	<div class="logos-container">
@@ -109,7 +109,19 @@
       </div>
     </div>
 
-		<footer></footer>
+    <div class="contact-row" id="contact">
+    	<h1>Contact Me</h1>
+    	<form class="form-group" action="https://formspree.io/f/xoqybazj" method="POST">
+    		<input class="form-control" type="text" name="name" placeholder="Name">
+				<input class="form-control" type="email" name="_replyto" placeholder="Email">
+				<textarea class="form-control" name="message" placeholder="Message"></textarea>
+				<button class="form-control" type="submit">Send</button>
+			</form>
+    </div>
+
+		<footer>
+			
+		</footer>
 	</div>
 
 

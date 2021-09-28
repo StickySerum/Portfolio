@@ -253,6 +253,22 @@ header {
     .about-me .right-side p {
       max-width: 350px;
       margin: 0 40px; }
+      @media (max-width: 768px) {
+        .about-me .right-side p {
+          padding: 0 20px;
+          margin: auto; } }
+    .about-me .right-side .buzz-word {
+      color: #90273b;
+      font-weight: 500;
+      white-space: nowrap; }
+      @media (max-width: 499px) {
+        .about-me .right-side .buzz-word {
+          white-space: normal; } }
+      .about-me .right-side .buzz-word .gold {
+        color: #CEB888;
+        text-shadow: 0 0 1px #d3d3d3; }
+      .about-me .right-side .buzz-word .black {
+        color: #000000; }
 
 .torn-picture-row .torn-picture {
   width: 100%; }
@@ -358,3 +374,38 @@ header {
       z-index: 2;
       overflow: hidden;
       width: 100%; }
+
+.contact-row {
+  height: 600px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(30, 30, 30, 0.9), rgba(30, 30, 30, 0.9)), url("../assets/images/stranger.png");
+  background-size: 70%;
+  background-position: bottom left;
+  background-attachment: fixed;
+  background-repeat: no-repeat; }
+  @media (max-width: 992px) {
+    .contact-row {
+      height: 500px; } }
+  @media (max-width: 768px) {
+    .contact-row {
+      height: 450px; } }
+  .contact-row form {
+    width: 100%; }
+  .contact-row .form-control {
+    max-width: 500px;
+    margin: 20px auto; }
+  .contact-row button.form-control {
+    max-width: 200px;
+    border: 2px solid #1e1e1e;
+    color: #1e1e1e;
+    background-color: #fee212;
+    margin-bottom: 0;
+    transition: .3s ease; }
+    .contact-row button.form-control:hover {
+      background-color: #1e1e1e;
+      color: #fee212;
+      border-color: #fee212; }

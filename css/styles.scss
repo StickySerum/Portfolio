@@ -515,7 +515,7 @@ header {
 }
 
 .contact-row {
-	height: 650px;
+	height: 500px;
 	padding: 20px;
 	display: flex;
 	justify-content: center;
@@ -526,10 +526,6 @@ header {
 	background-position: bottom left;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-
-	@media(max-width: 992px) {
-		height: 500px;
-	}
 
 	@media(max-width: 768px) {
 		height: 450px;

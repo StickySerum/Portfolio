@@ -248,10 +248,11 @@ header {
         width: 100%;
         display: block;
         padding: 40px 0;
-        border-radius: 0 0 30px 30px; } }
+        border-radius: 0 0 30px 30px;
+        margin-bottom: -1px; } }
     .about-me .right-side p {
       max-width: 350px;
-      padding: 0 40px; }
+      margin: 0 40px; }
 
 .torn-picture-row .torn-picture {
   width: 100%; }

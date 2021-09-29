@@ -13,23 +13,23 @@
     <script>
         $(document).ready(function() {
             $('.logos-container .logo').click(function () {
-                $('.macbook-container .macbook-background').removeClass('allin beaverbrook encore mendocino skinlab');
+                $('.mac_screen_content .macbook-background').removeClass('allin beaverbrook encore mendocino skinlab');
 
                 switch(this.id) {
                     case 'allin-logo':
-                        $('.macbook-container .macbook-background').addClass('allin');
+                        $('.mac_screen_content .macbook-background').addClass('allin');
                         break;
                     case 'beaverbrook-logo':
-                        $('.macbook-container .macbook-background').addClass('beaverbrook');
+                        $('.mac_screen_content .macbook-background').addClass('beaverbrook');
                         break;
                     case 'encore-logo':
-                        $('.macbook-container .macbook-background').addClass('encore');
+                        $('.mac_screen_content .macbook-background').addClass('encore');
                         break;
                     case 'mendocino-logo':
-                        $('.macbook-container .macbook-background').addClass('mendocino');
+                        $('.mac_screen_content .macbook-background').addClass('mendocino');
                         break;
                     case 'skinlab-logo':
-                        $('.macbook-container .macbook-background').addClass('skinlab');
+                        $('.mac_screen_content .macbook-background').addClass('skinlab');
                         break;
                 }
             });
@@ -103,12 +103,25 @@
       </div>
 
       <div class="right-side">
-      	<div class="macbook-container">
-        <div class="macbook-background encore"></div>
-        	<img class="macbook" src="assets/images/macbook.png"/>
-        </div>
-      </div>
-    </div>
+	    	<div class="mac_container">
+				<div class="mac_scaler">
+				<div class="mac_holder">
+				<div class="mac_screen">
+				<div class="mac_camera"></div>
+				<div class="mac_screen_content">
+	      <div class="macbook-background encore"></div>
+				</div>
+				</div>
+				<div class="mac_bottom">
+				<div class="mac_bottom_top_half">
+				<div class="mac_thumb_space"></div>
+				</div>
+				</div>
+				</div>
+				</div>
+				</div>
+      	</div>
+    	</div>
 
     <div class="contact-row" id="contact">
     	<h1>Contact Me</h1>

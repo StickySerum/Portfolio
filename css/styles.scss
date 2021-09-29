@@ -122,13 +122,15 @@ header {
 			transition: .15s ease-in-out;
 		}
 
-		a:hover {
-			color: #ffffff;
-		}
+		@media(hover: hover) {
+			a:hover {
+				color: #ffffff;
+			}
 
-		li a:hover:before {
-			transform: translateX(0%);
-			visibility: visible;
+			li a:hover:before {
+				transform: translateX(0%);
+				visibility: visible;
+			}
 		}
 	}
 }

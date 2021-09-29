@@ -90,11 +90,12 @@ header {
       transform: translateX(100%);
       visibility: hidden;
       transition: .15s ease-in-out; }
-    header .container a:hover {
-      color: #ffffff; }
-    header .container li a:hover:before {
-      transform: translateX(0%);
-      visibility: visible; }
+    @media (hover: hover) {
+      header .container a:hover {
+        color: #ffffff; }
+      header .container li a:hover:before {
+        transform: translateX(0%);
+        visibility: visible; } }
 
 .hero, .mobile-hero {
   height: 580px;

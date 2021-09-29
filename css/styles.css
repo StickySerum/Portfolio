@@ -179,6 +179,9 @@ header {
 .about-me-row {
   height: 650px;
   padding: 0 20px; }
+  @media (max-width: 992px) {
+    .about-me-row {
+      height: 600px; } }
   @media (max-width: 768px) {
     .about-me-row {
       height: auto;
@@ -276,8 +279,15 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right center; }
-  .torn-picture-row .torn-picture {
-    width: 100%; }
+  @media (max-width: 992px) {
+    .torn-picture-row {
+      height: 400px; } }
+  @media (max-width: 768px) {
+    .torn-picture-row {
+      height: 350px; } }
+  @media (max-width: 499px) {
+    .torn-picture-row {
+      background-position: 86%; } }
 
 .portfolio-title-row {
   padding-bottom: 20px; }

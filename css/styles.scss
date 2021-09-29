@@ -249,7 +249,7 @@ header {
 }
 
 .about-me-row {
-	height: 550px;
+	height: 650px;
 	padding: 0 20px;
 
 	@media(max-width: 768px) {
@@ -372,6 +372,11 @@ header {
 }
 
 .torn-picture-row {
+	height: 500px;
+	background-image: url('../assets/images/bw-award-torn.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right center;
 
 	.torn-picture {
 		width: 100%;

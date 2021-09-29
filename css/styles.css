@@ -177,7 +177,7 @@ header {
     margin: 0; }
 
 .about-me-row {
-  height: 550px;
+  height: 650px;
   padding: 0 20px; }
   @media (max-width: 768px) {
     .about-me-row {
@@ -270,8 +270,14 @@ header {
       .about-me .right-side .buzz-word .black {
         color: #000000; }
 
-.torn-picture-row .torn-picture {
-  width: 100%; }
+.torn-picture-row {
+  height: 500px;
+  background-image: url("../assets/images/bw-award-torn.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center; }
+  .torn-picture-row .torn-picture {
+    width: 100%; }
 
 .portfolio-title-row {
   padding-bottom: 20px; }

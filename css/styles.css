@@ -182,18 +182,19 @@ header {
     margin: 0; }
 
 .about-me-row {
-  height: 630px;
+  height: 520px;
   padding: 0 20px; }
   @media (max-width: 992px) {
     .about-me-row {
-      height: 600px; } }
+      height: 500px; } }
   @media (max-width: 768px) {
     .about-me-row {
       height: auto;
-      padding: 40px 0; } }
+      padding-top: 40px; } }
   @media (max-width: 499px) {
     .about-me-row {
-      padding: 40px 20px; } }
+      padding: 40px 20px;
+      padding-bottom: 0; } }
 
 .about-me {
   display: flex;
@@ -279,7 +280,7 @@ header {
         color: #000000; }
 
 .torn-picture-row {
-  height: 500px;
+  height: 550px;
   background-image: url("../assets/images/bw-award-torn.png");
   background-repeat: no-repeat;
   background-size: cover;

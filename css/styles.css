@@ -182,11 +182,8 @@ header {
     margin: 0; }
 
 .about-me-row {
-  height: 520px;
+  height: 500px;
   padding: 0 20px; }
-  @media (max-width: 992px) {
-    .about-me-row {
-      height: 500px; } }
   @media (max-width: 768px) {
     .about-me-row {
       height: auto;

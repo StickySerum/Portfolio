@@ -80,9 +80,17 @@ header {
 			width: 70%;
 			text-align: right;
 
+			.home-link {
+				display: none;
+			}
+
 			@media(max-width: 768px) {
 				width: 100%;
 				text-align: center;
+
+				.home-link {
+					display: inline
+				}
 			}
  		}
 

@@ -43,14 +43,13 @@ h1 {
 
 header {
   display: flex;
-  padding: 5px 20px; }
+  padding: 0 20px; }
   header .container {
     display: flex;
     align-items: center; }
     header .container h1 {
       font-size: 25px;
       font-weight: 400;
-      line-height: 0;
       margin-top: 4px;
       width: 30%; }
       @media (max-width: 768px) {

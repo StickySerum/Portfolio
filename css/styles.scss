@@ -64,7 +64,7 @@ header {
 		display: flex;
 		align-items: center;
 
-		h1 {
+		/*h1 {
 			font-size: 25px;
 			font-weight: 400;
 			margin-top: 4px;
@@ -73,10 +73,11 @@ header {
 			@media(max-width: 768px) {
 				display: none;
 			}
-		}
+		}*/
 
 		nav {
-			width: 70%;
+			//width: 70%;
+			width: 100%;
 			text-align: right;
 
 			.home-link {
@@ -404,6 +405,11 @@ header {
 .portfolio-title-row {
 	padding-bottom: 20px;
 
+	@media(min-width: 1800px) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
 	h1 {
 		text-align: center;
 	}
@@ -495,6 +501,12 @@ header {
 			padding-top: 57.875%;
 			height: 0px;
 			position: relative;
+
+			@media(min-width: 1800px) {
+				width: 67%;
+				padding-top: 37.875%;
+				margin-left: 0;
+			}
 		}
 
 		.mac_holder{
